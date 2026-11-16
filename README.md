@@ -1,7 +1,13 @@
 # Wordle-Game-Project
-Word Guessing Game
+## Project Planning
 
-A browser-based word guessing game with HTML, CSS, and JavaScript.
+- [Project board](https://github.com/users/ofov/projects/1)
+- [Wireframe]<img width="2024" height="1078" alt="Untitled-2026-11-16-1810" src="https://github.com/user-attachments/assets/13617cb0-5b3a-467f-9520-4d4a3cdab718" />
+
+### Sprint 1
+ 
+
+Goal :A browser-based word guessing game with HTML, CSS, and JavaScript.
 
 Game Concept
 
@@ -24,5 +30,9 @@ Scoring
   - Gray: letter not in the word
 - Guess the word correctly to move to the next level.
 - After level 5, your final score is shown.
+
+
+Start: 16 Nov
+End: 24 Nov
 
 
