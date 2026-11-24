@@ -11,14 +11,14 @@ Goal :A browser-based word guessing game with HTML, CSS, and JavaScript.
 
 Game Concept
 
-The game has 5 levels. In each level you must guess the correct word.
+The game has 10 levels. In each level you must guess the correct word.
 
 Scoring
 
 - Score is based on the number of guesses used to find the word.
 - Fewer guesses = higher score.
 - More guesses = lower score.
-- Final score = total score across all 5 levels.
+- Final score = total score across all 10 levels.
 
  How to Play
 
@@ -29,8 +29,9 @@ Scoring
   - Yellow: correct letter, wrong position
   - Gray: letter not in the word
 - Guess the word correctly to move to the next level.
-- After level 5, your final score is shown.
+- After level 10, your final score is shown.
 
+- **Fisher-Yates Shuffle algorithm** — used in `shuffle()` function to randomize levels.
 
 Start: 16 Nov
 End: 24 Nov
