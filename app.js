@@ -26,6 +26,7 @@ const messageEl = document.getElementById('level');
 const hintDisplay = document.getElementById('Hint');
 const keys = document.querySelectorAll('.key');
 const scoreEl = document.getElementById('Score');
+const tryAgainBtn = document.getElementById('try');
 
 const sqr0EL = document.getElementById('0');
 const sqr1EL = document.getElementById('1');
@@ -170,7 +171,7 @@ function submitGuess() {
   guess = '';
   if (row >= MAX_ROWS) {
     gameOver = true;
-    messageEl.textContent = ` You lost! Try Again`;
+    messageEl.textContent = ` You lost! Try Again Final score: ${totalScore}`;
      document.getElementById("try").classList.remove("hidden");
   }
 }
@@ -189,6 +190,7 @@ function shuffle(array) {
 
 
 /*----------------------------- Event Listeners -----------------------------*/
+
 document.addEventListener('keydown', (event) => {
   if (gameOver===true) return;
   const key = event.key.toUpperCase();
@@ -202,8 +204,8 @@ document.addEventListener('keydown', (event) => {
   }
 });
 
-keyboardEl.addEventListener('click', (eevent) => {
-  const button = eevent.target.closest('.key');
+keyboardEl.addEventListener('click', (event) => {
+  const button = event.target.closest('.key');
   if (!button) return;
   const key = button.id;
   if (key === 'Backspace') {
@@ -216,7 +218,7 @@ submitGuess();
   }
 }); 
 
-document.getElementById("try").addEventListener("click", function () {
+tryAgainBtn.addEventListener("click", function () {
   currentlevel = 1;
   gameOver = false;
   row = 0;

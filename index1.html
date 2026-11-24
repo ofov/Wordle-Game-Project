@@ -3,37 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style1.css">
-
+    <link rel="stylesheet" href="style1.css">
     <title>Wordle - Welcome</title>
 </head>
 <body>
-
     <div class="left-section">
-        <h1>Wordle Game<br>Guess the right word<br>and jump to the next level</h1>
-        <p>Less attempts = Higher score!</p>
-        <p class="instructions">The game has 10 levels. In each level you must guess the correct word<br>
+        <h1>Wordle Game</h1>
+        <h2 class="subtitle">Guess the right word and jump to the next level</h2>
+        <p class="highlight">Less attempts = Higher score!</p>
 
-Scoring
-<br>
-Score is based on the n of guesses used to find the word,
-Fewer guesses = higher score,
-More guesses = lower score,
-Final score = total score across all 10 levels.
-<br>
- How to Play
-<br>
-- Type your guess using the keyboard.
-- Submit with Enter.
-- Letter colors give you hints:
-  - Green: correct letter, correct position
-  - Yellow: correct letter, wrong position
-  - Gray: letter not in the word
-- Guess the word correctly to move to the next level.
-- After level 10, your final score is shown.</p>
+        <p class="intro">The game has 10 levels, In each level you must guess the correct word.</p>
 
+        <div class="rules-container">
+            <h3>Scoring</h3>
+                <li>Score is based on the number of guesses used to find the word.</li>
+                <li>First guess = <strong>1000 points</strong></li>
+<li>More guesses = lower score by <strong>200</strong> for each guess.</li>
+<li>Final score = total score across all 10 levels.</li>
+
+            <h3>How to Play</h3>
+                <li>Type your guess using the keyboard.</li>
+                <li>Letter colors give you hints:
+                        <li><strong>Green:</strong> correct letter, correct position</li>
+                        <li><strong>Yellow:</strong> correct letter, wrong position</li>
+                        <li><strong>Gray:</strong> letter not in the word</li>
+                </li>
+                <li>Guess the word correctly to move to the next level.</li>
+            </ul>
+        </div>
 
         <button class="start-btn" onclick="window.location.href='index.html'">Start The Game</button>
+    </div>
+
+
     </div>
 
 </body>
