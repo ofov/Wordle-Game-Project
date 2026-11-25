@@ -31,7 +31,27 @@ Scoring
 - Guess the word correctly to move to the next level.
 - After level 10, your final score is shown.
 
+Screenshot
+<img src="./assets/TEST.png" alt="Wordle Game Screenshot" width="800"/>
+Live Demo
+(https://ofov.github.io/Wordle-Game-Project/)
+
+Technologies Used
+-HTML
+-CSS
+-JavaScript
+
+Algorithms
+
 - **Fisher-Yates Shuffle algorithm** — used in `shuffle()` function to randomize levels.
+
+Next Steps
+
+-Add more levels and words.
+
+-Add difficulty settings.
+
+-Improve the mobile user interface.
 
 Start: 16 Nov
 End: 24 Nov
