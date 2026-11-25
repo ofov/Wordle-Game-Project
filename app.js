@@ -27,6 +27,7 @@ const hintDisplay = document.getElementById('Hint');
 const keys = document.querySelectorAll('.key');
 const scoreEl = document.getElementById('Score');
 const tryAgainBtn = document.getElementById('try');
+const logoel=document.getElementById("main")
 
 const sqr0EL = document.getElementById('0');
 const sqr1EL = document.getElementById('1');
@@ -185,7 +186,9 @@ function shuffle(array) {
     return array;
 }
 
-
+logoel.addEventListener("click", function() {
+  window.location.href = 'index1.html';
+});
 
 
 
